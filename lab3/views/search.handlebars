@@ -1,0 +1,20 @@
+{{#section "head"}}
+  <title>Shows Found</title>
+{{/section}}
+
+<h1 class="headerStyle">Shows Found</h1>
+<h2 class="searchTermHeader">
+  {{searchTerm}}
+</h2>
+{{#if showList}}
+  <ul class="unorderContainer">
+    {{#each showList}}
+      <li class="showListStyle">
+        <a href="/show/{{show.id}}">{{show.name}}</a>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>We're sorry, but no results were found for {{searchTerm}}.</p>
+{{/if}}
+<a class="footerLinkStyle" href="/">Make another search</a>

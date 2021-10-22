@@ -1,0 +1,62 @@
+{{#section 'head'}}
+{{#if showDetails.name}}
+<title>{{showDetails.name}}</title>
+{{else}}
+<title>Show Details</title>
+{{/if}}
+{{/section}}
+    <div class="showContainer">
+        {{#if showDetails.name}}
+        <h1 class="headerStyle">{{showDetails.name}}</h1>
+        {{/if}}
+
+        {{#if showDetails.image.medium}}
+        <img class="imageStyle" alt={{showDetails.id}} src={{showDetails.image.medium}} />
+        {{/if}}
+        <dl class="describeContainer">
+            <dt class="describeHeaderStyle">Language</dt>
+            <dd>
+                {{#if showDetails.language}}
+                {{showDetails.language}}
+                {{else}}
+                NA
+                {{/if}}
+            </dd>
+            <dt class="describeHeaderStyle">Genres</dt>
+            <dd>
+                <ul>
+                    {{#if showDetails.genres}}
+                    {{#each showDetails.genres}}
+                    <li> {{this}} </li>
+                    {{/each}}
+                    {{else}}
+                    NA
+                    {{/if}}
+                </ul>
+            </dd>
+            <dt class="describeHeaderStyle">Average Rating</dt>
+            <dd>
+                {{#if showDetails.rating.average}}
+                {{showDetails.rating.average}}
+                {{else}}
+                NA
+                {{/if}}
+            </dd>
+            <dt class="describeHeaderStyle">Network</dt>
+            <dd>
+                {{#if showDetails.network.name}}
+                {{showDetails.network.name}}
+                {{else}}
+                NA
+                {{/if}}
+            </dd>
+            <dt class="describeHeaderStyle">Summary</dt>
+            <dd>
+                {{#if showDetails.summary}}
+                {{showDetails.summary}}
+                {{else}}
+                NA
+                {{/if}}
+            </dd>
+        </dl>
+    </div>

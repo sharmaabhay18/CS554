@@ -1,0 +1,13 @@
+{{#section "head"}}
+  <title>Popular search term</title>
+{{/section}}
+
+{{#if topSearchTerm}}
+  <ol>
+    {{#each topSearchTerm}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ol>
+{{else}}
+  <p>Please add shows in popular list</p>
+{{/if}}

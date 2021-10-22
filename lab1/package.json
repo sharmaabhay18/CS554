@@ -1,0 +1,19 @@
+{
+  "name": "cs-554-lab-1",
+  "version": "1.0.0",
+  "description": "Lab1 Assignment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Abhay Sharma 10459806",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.1.1",
+    "xss": "^1.0.9"
+  }
+}

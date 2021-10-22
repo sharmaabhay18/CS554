@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/public/site.css" />
+    {{{_sections.head}}}
+  </head>
+
+  <body>
+    <h1 class="headerStyle">Show Finder</h1>
+    <main id="homeContainer">
+      <p id="homeParagraph">Welcome to show finder. This website will assist you
+        with finding your favourite shows and also provide you with a bunch of
+        information for the same. Enjoy your stay :)</p>
+      <form
+        class="formContainer"
+        action="/search"
+        method="POST"
+        id="searchForm"
+      >
+        <label for="searchbar"> Search Shows </label>
+        <input
+          class="searchBarStyle"
+          type="text"
+          id="searchbar"
+          name="searchTerm"
+        />
+      </form>
+      <button
+        class="homeButton"
+        type="submit"
+        form="searchForm"
+        value="Submit"
+      >Submit</button>
+      {{{body}}}
+    </main>
+  </body>
+
+</html>
