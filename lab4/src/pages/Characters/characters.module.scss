@@ -1,0 +1,17 @@
+.characterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0px;
+}
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  color: rgb(163, 0, 0);
+}
+
+.notFound h1 {
+  margin-left: -30px;
+}

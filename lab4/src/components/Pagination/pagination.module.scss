@@ -1,0 +1,48 @@
+.pageContianer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mainContainer {
+  display: flex;
+  padding: 0px;
+}
+
+.mainContainer ul {
+  display: inline-block;
+}
+
+.mainContainer li {
+  display: inline-block;
+  margin: 0px 4px;
+  border: 1px solid rgb(163, 0, 0);
+  width: 50px;
+  height: 30px;
+  border-radius: 4px;
+  color: rgb(163, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer li a {
+  padding: 3px 8px;
+}
+
+.mainContainer li:hover {
+  background-color: rgb(163, 0, 0);
+}
+
+.mainContainer li:hover a {
+  color: white !important;
+}
+
+.activeSideBarStyle {
+  background-color: rgb(163, 0, 0);
+}
+
+.activeSideBarStyle a {
+  color: white !important;
+}
