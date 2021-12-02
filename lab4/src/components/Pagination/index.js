@@ -9,6 +9,10 @@ const Pagination = ({ handlePageClick, pageCount, forcePagination }) => {
     <div className={styles.pageContianer}>
       {pageCount && pageCount !== 0 ? (
         <ReactPaginate
+          hrefBuilder={(pageIndex) => {
+            console.log("pageIndex", pageIndex);
+            return "/";
+          }}
           previousLabel={"<"}
           nextLabel={">"}
           breakLabel={"..."}
@@ -17,10 +21,16 @@ const Pagination = ({ handlePageClick, pageCount, forcePagination }) => {
           pageRangeDisplayed={5}
           onPageChange={handlePageClick}
           activeClassName={styles.activeSideBarStyle}
+          previousLinkClassName={styles.pageLinkStyle}
+          nextLinkClassName={styles.pageLinkStyle}
           containerClassName={styles.mainContainer}
           initialPage={0}
           disableInitialCallback
           forcePage={forcePagination}
+          ariaLabelBuilder={(page, selected) =>
+            selected ? "The current page is page " + page : "It's page " + page
+          }
+          pageLinkClassName={styles.pageLinkStyle}
         />
       ) : null}
     </div>

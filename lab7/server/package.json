@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Lab 7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Abhay Sharma 10459806",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.5.0",
+    "apollo-server-errors": "^3.3.0",
+    "axios": "^0.24.0",
+    "bluebird": "^3.7.2",
+    "graphql": "^16.0.1",
+    "node-redis": "^0.1.7",
+    "redis": "^3.1.2"
+  }
+}

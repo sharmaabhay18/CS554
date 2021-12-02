@@ -1,0 +1,94 @@
+.pokemonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeContainer {
+  border-radius: 24px;
+  background-color: rgb(231, 16, 80);
+  padding: 0px 15px;
+  margin: 0px 10px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+
+.typeContainer p {
+  margin: 10px;
+  color: white;
+}
+
+.imgStyle {
+  height: 300px;
+  z-index: 1;
+  margin: 20px 0px;
+  width: 300px;
+}
+
+.imgSmallStyle {
+  height: 150px;
+  z-index: 1;
+  width: 150px;
+}
+
+.abContainer {
+  margin: 0px 5px;
+}
+
+.abContainer p {
+  margin: 4px;
+}
+
+.colContainer h1 {
+  margin: 15px 0px 0px 0px;
+}
+
+.movesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4px 40px;
+  justify-content: center;
+}
+
+.moContainer {
+  margin: 0px 5px;
+}
+
+.moContainerPara {
+  margin: 4px;
+}
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  color: rgb(163, 0, 0);
+}
+
+.notFound h1 {
+  margin-left: -30px;
+}

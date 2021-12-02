@@ -1,0 +1,16 @@
+.loaderContianer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  height: 200vh;
+  width: 100vw;
+}
+
+.loaderChildContianer {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-30%, -50%);
+}

@@ -156,7 +156,7 @@ router.get("/popularsearches", async (_, res) => {
         topSearchTerm.push(searchTerm);
       }
     }
-    
+
     res.render("popularlist", {
       topSearchTerm: topSearchTerm.slice(0, 10),
     });
